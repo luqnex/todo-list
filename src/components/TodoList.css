@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.todo-wrapper { 
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #2B2E43;
+}
+
+.todo-wrapper h1 {
+    margin-top: 50px;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #4EB879;
+}
+
+.todo-wrapper form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-wrapper form input {
+    max-width: 100%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    border: none;
+
+    border-radius: 8px;
+
+    margin: 20px 0 15px;
+
+    background: #ffff;
+    outline: none;
+
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.todo-wrapper form button {
+    background: #4EB879;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 8px;
+    transition: .3s;
+    margin-bottom: 30px;
+
+    outline: none;
+}
+
+.todo-wrapper form button:hover {
+    background: #398557;
+}
+
+.todo-wrapper ul li {
+    text-decoration: none;
+    width: 100%;
+    background: #484C69;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 10px;
+
+    font-family: sans-serif;
+}
+
+
