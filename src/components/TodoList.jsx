@@ -10,9 +10,7 @@ export function TodoList() {
     function handleInputTask(event) {
         const inputTask = event.target.value
         
-        const isInputTask = inputTask.value != undefined ? inputTask : 'Digite um valor'
-        
-        setTask(isInputTask)
+        setTask(inputTask)
     }
     
     const [itemsList, setItemsList] = useState([])
