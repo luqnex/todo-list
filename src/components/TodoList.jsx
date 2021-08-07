@@ -25,18 +25,20 @@ export function TodoList() {
     
     return (
         <div className="todo-wrapper">
-            <h1>Todo List</h1>
-            <div className="list">
-                <form >
-                    <input type="text" placeholder="Adicione uma tarefa" onChange={handleInputTask} value={task} />
-                    <button type="submit" onClick={addItem}>Adicionar</button>
-                </form>
-        
-                <ul className="todo-list" >
-                    {itemsList.map(item => 
-                        <li>{item}</li>
-                    )}
-                </ul>
+            <div className="content">
+                <h1>Todo List</h1>
+                    <div className="list">
+                        <form >
+                            <input type="text" placeholder="Adicione uma tarefa" onChange={handleInputTask} value={task} />
+                            <button type="submit" onClick={addItem}>Adicionar</button>
+                        </form>
+                
+                        <ul className="todo-list" >
+                            {itemsList.map(item => 
+                                <li>{item}</li>
+                            )}
+                        </ul>
+                    </div>
             </div>
         </div>
     )
